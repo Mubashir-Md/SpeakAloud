@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerPeeps</title>
+</head>
+
+<body>
+    <h2>Speech Recognition Model</h2>
+    <iframe src="https://giphy.com/embed/3o7TKNKOfKlIhbD3gY" width="480" height="250" frameBorder="0" class="giphy-embed" ></iframe>
+    <p>Hey, {{random}}</p>
+    <form action="{{url_for('speech')}}">
+        <button id="mine" type="submit">Start</button>
+    </form>
+    <p id="out">{{txt}}</p>
+    <!-- <p>Oops, {{exception}}</p> -->
+    <script>
+        btn = document.getElementById('mine');
+        dyna = document.getElementById('out');
+        console.log(dyna.textContent)
+    </script>
+</body>
+
+</html>
